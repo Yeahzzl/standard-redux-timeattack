@@ -1,7 +1,15 @@
 import React from "react";
+import Input from "../components/Input";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
-  return <div>Home</div>;
+  const navigate = useNavigate();
+
+  return (
+    <div>
+      <Input navigate={navigate} />
+    </div>
+  );
 }
 
 export default Home;
